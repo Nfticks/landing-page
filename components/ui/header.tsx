@@ -24,26 +24,29 @@ export default function Header() {
 
   return (
     <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top ? 'bg-white backdrop-blur-sm shadow-lg' : ''}`}>
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="max-w-screen-2xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Site branding */}
           <div className="shrink-0 mr-4">
-            <Logo />
+            <Logo imageSrc="/images/nfticks.png" />
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
-             
               <li>
-                <Link href="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <Link
+                  href="#whitelist-section"
+                  className="btn font-semibold text-base text-white rounded-full px-16 pb-10 pt-4" // Adjusted padding here
+                  style={{ backgroundColor: '#7854F7' }}
+                >
                   <span>Join whitelist</span>
-                  
                 </Link>
               </li>
             </ul>
+
 
           </nav>
 

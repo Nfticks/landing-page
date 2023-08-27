@@ -3,39 +3,57 @@ import React from 'react';
 export default function Comparison() {
   return (
     <section className="relative">
-
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
-
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">
-              Nfticks vs. Traditional Market
-            </h2>
+            <h2 className="h2 mb-4">Nfticks vs. Traditional Market</h2>
           </div>
 
-          {/* Items */}
-          <div className="max-w-sm mx-auto md:max-w-2xl lg:max-w-none">
-            <div className="flex gap-8">
-
-              {/* Light background card */}
-              <div className="relative flex flex-col items-center p-6 bg-white rounded-lg bg-blue-100">
-                <img src="/images/nfticks.png" alt="Nfticks" className="w-20 h-20 mb-4" />
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-2">Nfticks</h4>
-                <p className="text-gray-600 text-center">
-                  Explore the future of NFT ticketing with seamless transactions, instant access, and high scalability.
-                </p>
+          <div className="flex gap-8">
+            {/* First stack of cards */}
+            <div className="stack">
+              <div className="card shadow-md bg-white text-primary-content">
+                <div className="card-body">
+                <img src="/images/check.png" alt="Book a meeting" className="w-28 h-28 mb-3" />
+                  <h2 className="card-title">Notification 1</h2> 
+                  <p>You have 3 unread messages. Tap here to see.</p>
+                </div>
+              </div> 
+              <div className="card shadow bg-slate-50 text-primary-content">
+                <div className="card-body">
+                  <h2 className="card-title">Notification 2</h2> 
+                  <p>You have 3 unread messages. Tap here to see.</p>
+                </div>
+              </div> 
+              <div className="card shadow-sm bg-slate-100 text-primary-content">
+                <div className="card-body">
+                  <h2 className="card-title">Notification 3</h2> 
+                  <p>You have 3 unread messages. Tap here to see.</p>
+                </div>
               </div>
-
-              {/* Dark background card */}
-              <div className="relative flex flex-col items-center p-6 bg-gray-800 rounded-lg text-white">
-                <img src="/images/traditional-market.png" alt="Traditional Market" className="w-20 h-20 mb-4" />
-                <h4 className="text-xl font-bold leading-snug tracking-tight mb-2">Traditional Market</h4>
-                <p className="text-gray-300 text-center">
-                  Experience the legacy of traditional ticketing methods with limitations and less flexibility.
-                </p>
+            </div>
+            
+            {/* Second stack of cards */}
+            <div className="stack">
+              <div className="card shadow-md bg-primary text-primary-content">
+                <div className="card-body">
+                  <h2 className="card-title">Notification 1</h2> 
+                  <p>You have 3 unread messages. Tap here to see.</p>
+                </div>
+              </div> 
+              <div className="card shadow bg-primary text-primary-content">
+                <div className="card-body">
+                  <h2 className="card-title">Notification 2</h2> 
+                  <p>You have 3 unread messages. Tap here to see.</p>
+                </div>
+              </div> 
+              <div className="card shadow-sm bg-primary text-primary-content">
+                <div className="card-body">
+                  <h2 className="card-title">Notification 3</h2> 
+                  <p>You have 3 unread messages. Tap here to see.</p>
+                </div>
               </div>
-              
             </div>
           </div>
 
@@ -50,9 +68,8 @@ export default function Comparison() {
               Join Discord
             </a>
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }

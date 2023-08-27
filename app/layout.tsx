@@ -1,6 +1,8 @@
 import './css/style.css'
 
 import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 
 import Header from '@/components/ui/header'
 import Banner from '@/components/banner'
@@ -9,6 +11,19 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap'
+})
+
+const roboto= Roboto({
+  subsets: ['latin'],
+  variable: '--font-roboto',
+  weight : ['400', '700'],
+  display: 'swap',
+})
+
+const open_sans = Open_Sans({
+  subsets: ['latin'],
+  variable: '--font-open-sans',
+  display: 'swap',
 })
 
 export const metadata = {
@@ -23,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}>
+      <body className={`${open_sans.variable} font-openSans antialiased bg-white text-gray-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}

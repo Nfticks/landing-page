@@ -1,3 +1,5 @@
+const {fontFamily} = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,14 +10,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        black:{
+          300:'#3C6758'
+        },
+        purple: {
+          300: '#7854F7',
+        },
         gray: {
           100: '#FBFBFB',
           200: '#EAEAEA',
-          300: '#DFDFDF',
+          300: '#cfcccc',
           400: '#999999',
-          500: '#7F7F7F',
+          500: '#8A95A6',
           600: '#666666',
-          700: '#4C4C4C',
+          700: '#94A2B3',
           800: '#333333',
           900: '#191919',
         },
@@ -60,7 +68,10 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
+        
         inter: ['var(--font-inter)', 'sans-serif'],
+        roboto : ['var(--font-roboto)', 'sans-serif'],
+        openSans : ['var(--font-open-sans)', 'sans-serif'],
       },
       fontSize: {
         xs: '0.75rem',
@@ -70,7 +81,7 @@ module.exports = {
         xl: '1.25rem',
         '2xl': '1.5rem',
         '3xl': '2rem',
-        '4xl': '2.625rem',
+        '4xl': '3rem',
         '5xl': '3.25rem',
         '6xl': '5.5rem',
       },
@@ -129,5 +140,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require("daisyui"),
   ],
 };
