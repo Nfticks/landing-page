@@ -1,6 +1,6 @@
 import './css/style.css'
 
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 import { Roboto } from 'next/font/google'
 import { Open_Sans } from 'next/font/google'
 
@@ -13,9 +13,9 @@ const inter = Inter({
   display: 'swap'
 })
 
-const roboto= Roboto({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-roboto',
+  variable: '--font-poppins',
   weight : ['400', '700'],
   display: 'swap',
 })
@@ -38,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${open_sans.variable} font-openSans antialiased bg-white text-gray-900 tracking-tight`}>
+      <body className={`${open_sans.variable} ${poppins.variable} ${inter.variable} font-openSans antialiased bg-background bg-blue-dark text-gray-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}

@@ -3,7 +3,7 @@ import Logo from './logo'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-500 py-8">
+    <footer className="bg-indigo-950 py-8">
       <div className="max-w-7xl mx-auto ">
         <div className="grid sm:grid-cols-12 gap-8">
 
@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="mb-4">
               <Logo imageSrc="/images/logo_white.png" />
             </div>
-            <p className="text-sm text-gray-800 text-white">
+            <p className="text-sm text-gray-800 text-white px-2">
               Our NFT Service Tickets offer a new way to monetize your Discord channels.<br></br> Experience seamless transactions, instant access, and high scalability.
             </p>
           </div>

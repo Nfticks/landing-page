@@ -1,9 +1,11 @@
 import React from 'react';
 import Accordion from './utils/accordion'; // Make sure to import the Accordion component
+import Image from 'next/image';
 
 export default function FAQ() {
   return (
-    <section className="relative bg-slate-50">
+    <section className="relative ">
+
 
 {/* <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
         <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
@@ -22,20 +24,36 @@ export default function FAQ() {
       </div> */}
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="absolute -top-60 -left-16   transform mix-blend-lighten opacity-70 z-0">
+                  
+                  <Image className="relative w-[640px] h-[832px] mix-blend-lighten opacity-70 z-0" src="/images/nayzak.png" width={350} height={500} alt="Testimonial 01" unoptimized/>
+                </div> 
         <div className="py-12 md:py-20">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4 font-bold" data-aos="fade-up" data-aos-delay="200">
+          <div className="max-w-4xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="text-white
+            text-4xl
+            font-extrabold
+            uppercase
+            leading-[46.80px]
+            tracking-wide 
+            font-poppins
+            mb-2" data-aos="fade-up" data-aos-delay="200">
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-400" data-aos="fade-up" data-aos-delay="200"> 
+            <p className="text-slate-400
+text-lg
+font-normal
+font-poppins
+leading-[25px] " data-aos="fade-up" data-aos-delay="200"> 
               Everything you need to know about the product and billing.
             </p>
           </div>
 
           {/* Accordion items */}
-          <div className="max-w-sm mx-auto md:max-w-2xl lg:max-w-none px-16" data-aos="fade-up" data-aos-delay="250">
+          <div className="max-w-sm mx-auto md:max-w-2xl lg:max-w-none  md:px-16" data-aos="fade-up" data-aos-delay="250">
+            
             <ul>
               <Accordion title="What is Nfticks?" active={true}>
                 Nfticks is a revolutionary NFT ticketing platform that allows you to create, sell, and manage event tickets as NFTs on the blockchain.

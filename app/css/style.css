@@ -16,3 +16,31 @@
     }
 }
 
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+    display: none;
+}
+
+
+
+.bg-background {
+    background-color: #05092E;
+    background: url('/images/Bg.png') top/1440px 800px no-repeat, #05092E;
+}
+
+@media screen and (max-width: 991px) {
+    .bg-background {
+        background-color: #05092E;
+        background: url('/images/Bg.png') top/1040px 500px no-repeat, #05092E;
+    }
+}
+
+  .width{
+    width : 323px !important;
+    height: 400px !important;
+  }
+
+  .bg-lighten{
+    background: url('/public/images/nayzak.png'), lightgray 90% / cover no-repeat; 
+    mix-blend-mode: lighten;
+  }
